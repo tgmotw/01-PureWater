@@ -1,0 +1,180 @@
+/*--Общие настройки--------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+input, a, button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+/*--Основной фон-----------------------------------------------------------*/
+.main-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../02-Images/02-PureWater.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*--Основной заголовок-----------------------------------------------------*/
+.main-header {
+    position: absolute;
+    margin: 50px;
+    right: 0;
+    font-family: "Vladimir Script", sans-serif;
+    font-size: 80px;
+    color: darkgoldenrod;
+}
+/*--Основное меню----------------------------------------------------------*/
+.main-menu {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.welcome-title{
+    display: block;
+    width: 400px;
+    height: 35px;
+    margin: 30px;
+    color: darkgoldenrod;
+    font-size: 25px;
+}
+
+.main-menu-list{
+    list-style-type: none;
+}
+.authorization-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 400px;
+    height: 70px;
+    margin: 30px;
+    border-radius: 35px;
+    border: 2px solid #b59f5b;
+    background-color: #b59f5b;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.authorization-link:focus{
+    border: 2px solid darkgoldenrod;
+}
+
+.authorization-link:hover{
+    background-color: darkgoldenrod;
+}
+.authorization-link:active{
+    background-color: lightgrey;
+    color: lightgrey;
+}
+/*--ВСПЛЫВАЮЩИЕ ЭЛЕМЕНТЫ---------------------------------------------------*/
+.form-field:focus, .form-field:hover, .form-field:active{
+    border: 2px solid darkgoldenrod;
+    background-color: darkgoldenrod;
+    border-radius: 35px;
+}
+
+#ok:active, #register.active {
+    background-color: lightgrey;
+    color: lightgrey;
+}
+
+.go-back{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.60;
+}
+/*--ВСПЛЫВАЮЩИЕ ЭЛЕМЕНТЫ.Меню авторизации----------------------------------*/
+.login-form{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+.login-form:target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field-container{
+    display: block;
+    position: absolute;
+    border-radius: 35px;
+    background-color: #244558;
+}
+
+.form-field-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 0;
+}
+
+.form-field-name{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #f1f2f6;
+}
+
+.form-field{
+    width: 400px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 2px solid #b59f5b;
+    background-color: #b59f5b;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+#ok{
+    width: 150px;
+}
+/*--ВСПЛЫВАЮЩИЕ ЭЛЕМЕНТЫ.Меню авторизации----------------------------------*/
+.registration-form{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+.registration-form:target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form .form-field {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.registration-form #register {
+    width: 150px;
+}
+
+.registration-form .form-field-name {
+    font-size: 15px;
+}

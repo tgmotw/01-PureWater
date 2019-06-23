@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MainPage</title>
+    <meta charset="UTF-8">
+    <link href="01-Styles/AllCss.css" rel="stylesheet">
+    <link href="03-JS/AllJS.ts" rel="script">
+  </head>
+  <body>
+    <main id="main" class="main-page">
+<!--Главный заголовок------------------------------------------------------->
+      <div class="main-header">Pure Water Only</div>
+<!--Главное меню------------------------------------------------------------>
+      <nav class="main-menu">
+        <div class="welcome-title">Nice to see You again</div>
+        <ul class="main-menu-list">
+          <li>
+            <a class="authorization-link login-link" href=#login-form>
+              Log In
+            </a>
+          </li>
+          <li>
+            <a class="authorization-link registration-link" href="#registration-menu">
+              Registration
+            </a>
+          </li>
+        </ul>
+      </nav>
+<!--ВСПЛЫВАЮЩИЕ ОКНА-------------------------------------------------------->
+<!--ВСПЛЫВАЮЩИЕ ОКНА.Меню авторизации--------------------------------------->
+      <form id="login-form" class="popup-form login-form" name="login-menu">
+        <a href=#main
+           onclick="document.getElementById('login-form').reset();"
+           class="go-back">
+        </a>
+        <div class="form-field-container">
+        <label class="form-field-label">
+          <span class="form-field-name">Input e-mail or cellphone number</span>
+          <input id="login" class="form-field"
+                 type="text"
+                 autofocus
+                 name="login"
+                 placeholder="Example: 71234567890 or adress@mail.ru"
+                 tabindex="1"
+                 required
+                 autocomplete="off"
+          >
+        </label>
+        <label class="form-field-label">
+          <span class="form-field-name">Enter password</span>
+          <input id="password" class="form-field"
+                 type="password"
+                 name="password"
+                 tabindex="2"
+                 required
+                 autocomplete="off"
+          >
+        </label>
+        <label class="form-field-label">
+          <input id="ok" class="form-field"
+                 type="submit"
+                 name="Ok"
+                 value="Ok"
+                 tabindex="3"
+          >
+        </label>
+        </div>
+      </form>
+<!--ВСПЛЫВАЮЩИЕ ОКНА.Меню авторизации--------------------------------------->
+      <form id="registration-menu" class="popup-form registration-form" name="registration-menu">
+        <a href=#main
+           onclick="document.getElementById('registration-menu').reset();"
+           class="go-back">
+        </a>
+        <div class="form-field-container">
+          <label class="form-field-label">
+            <span class="form-field-name">Name and family name</span>
+            <input id="fio" class="form-field"
+                   type="text"
+                   autofocus
+                   name="fio"
+                   placeholder="Example: Ivan Ivanov"
+                   tabindex="1"
+                   required
+                   autocomplete="off"
+            >
+          </label>
+          <label class="form-field-label">
+            <span class="form-field-name">Cellphone</span>
+            <input id="cellphone" class="form-field"
+                   type="text"
+                   name="cellphone"
+                   placeholder="Example: 71234567890"
+                   tabindex="2"
+                   required
+                   autocomplete="off"
+            >
+          </label>
+          <label class="form-field-label">
+            <span class="form-field-name">E-mail</span>
+            <input id="e-mail" class="form-field"
+                   type="email"
+                   name="e-mail"
+                   placeholder="Example: adress@gmail.com"
+                   tabindex="3"
+                   required
+                   autocomplete="off"
+            >
+          </label>
+          <label class="form-field-label">
+            <span class="form-field-name">Enter password</span>
+            <input id="new-password" class="form-field"
+                   type="password"
+                   name="new-password"
+                   tabindex="4"
+                   required
+                   autocomplete="off"
+            >
+          </label>
+          <label class="form-field-label">
+            <span class="form-field-name">Repeat password</span>
+            <input id="repeat-password" class="form-field"
+                   type="password"
+                   name="repeat-password"
+                   tabindex="5"
+                   required
+                   autocomplete="off"
+            >
+          </label>
+          <label class="form-field-label">
+            <input id="register" class="form-field"
+                   type="submit"
+                   name="Register"
+                   value="Complete"
+                   tabindex="6"
+            >
+          </label>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
